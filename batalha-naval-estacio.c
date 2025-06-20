@@ -88,12 +88,12 @@ int main() {
             }
 
             if (!podePosicionar(tabuleiro, linha, coluna, orientacao)) {
-                printf("❌ Posição inválida ou navio ultrapassa os limites / sobrepõe outro. Tente novamente.\n");
+                printf("Posição inválida ou navio ultrapassa os limites / sobrepõe outro. Tente novamente.\n");
             }
         } while (!podePosicionar(tabuleiro, linha, coluna, orientacao));
 
         posicionarNavio(tabuleiro, linha, coluna, orientacao);
-        printf("✅ Navio %d posicionado com sucesso!\n\n", i);
+        printf("Navio %d posicionado com sucesso!\n\n", i);
     }
 
     printf("==== TABULEIRO FINAL ====\n");
